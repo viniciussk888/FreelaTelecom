@@ -1322,7 +1322,7 @@ body #navigation ul ul ul { margin-top: 0; }
 /* Sticky Header
 ------------------------------------- */
 .children{
-	margin-top: 90px;
+	margin-top: auto;
 }
 #header-container {
     position: absolute;
@@ -2167,9 +2167,9 @@ em.mm-counter+a.mm-fullsubopen+span {
 #footer {
 	background-color: #303030;
 	color: #c0c0c0;
-	position:absolute;
-    bottom:0;
-    width:100%;
+	position:relative;
+  bottom:0;
+  width:100%;
 }
 
 #footer p { line-height: 26px; }

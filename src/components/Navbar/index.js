@@ -1,5 +1,4 @@
 import React from 'react'
-import Mail from '@material-ui/icons/Mail'
 import '../../template/css/styles.css'
 
 export default function Navbar(props) {
@@ -24,7 +23,7 @@ export default function Navbar(props) {
 
                   <li><a href="#">Encontrar Trabalho</a>
                     <ul class="dropdown-nav">
-                      <li><a href="#">Browse Jobs</a>
+                      <li><a href="#">Procurar Empregos</a>
                         <ul class="dropdown-nav">
                           <li><a href="jobs-list-layout-full-page-map.html">Full Page List + Map</a></li>
                           <li><a href="jobs-grid-layout-full-page-map.html">Full Page Grid + Map</a></li>
