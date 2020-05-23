@@ -227,12 +227,12 @@ export default function Home() {
                     <div class="freelancer-details">
                       <div class="freelancer-details-list">
                         <ul>
-                          <li>Location <strong><i class="icon-material-outline-location-on"></i> London</strong></li>
-                          <li>Rate <strong>$60 / hr</strong></li>
-                          <li>Job Success <strong>95%</strong></li>
+                          <li>Localização <strong><i class="icon-material-outline-location-on"></i> London</strong></li>
+                          <li>Taxa <strong>$60 / hr</strong></li>
+                          <li>Sucesso <strong>95%</strong></li>
                         </ul>
                       </div>
-                      <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile
+                      <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Ver Perfil
 										<i class="icon-material-outline-arrow-right-alt"></i></a>
                     </div>
                   </div>
@@ -272,12 +272,12 @@ export default function Home() {
                     <div class="freelancer-details">
                       <div class="freelancer-details-list">
                         <ul>
-                          <li>Location <strong><i class="icon-material-outline-location-on"></i> Berlin</strong></li>
-                          <li>Rate <strong>$40 / hr</strong></li>
-                          <li>Job Success <strong>88%</strong></li>
+                          <li>Localização <strong><i class="icon-material-outline-location-on"></i> Berlin</strong></li>
+                          <li>Taxa <strong>$40 / hr</strong></li>
+                          <li>Sucesso <strong>88%</strong></li>
                         </ul>
                       </div>
-                      <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile
+                      <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Ver Perfil
 										<i class="icon-material-outline-arrow-right-alt"></i></a>
                     </div>
                   </div>
@@ -315,12 +315,12 @@ export default function Home() {
                     <div class="freelancer-details">
                       <div class="freelancer-details-list">
                         <ul>
-                          <li>Location <strong><i class="icon-material-outline-location-on"></i> Warsaw</strong></li>
-                          <li>Rate <strong>$50 / hr</strong></li>
-                          <li>Job Success <strong>100%</strong></li>
+                          <li>Localização <strong><i class="icon-material-outline-location-on"></i> Warsaw</strong></li>
+                          <li>Taxa <strong>$50 / hr</strong></li>
+                          <li>Sucesso <strong>100%</strong></li>
                         </ul>
                       </div>
-                      <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile
+                      <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Ver Perfil
 										<i class="icon-material-outline-arrow-right-alt"></i></a>
                     </div>
                   </div>
@@ -359,12 +359,12 @@ export default function Home() {
                     <div class="freelancer-details">
                       <div class="freelancer-details-list">
                         <ul>
-                          <li>Location <strong><i class="icon-material-outline-location-on"></i> Brisbane</strong></li>
-                          <li>Rate <strong>$70 / hr</strong></li>
-                          <li>Job Success <strong>100%</strong></li>
+                          <li>Localização <strong><i class="icon-material-outline-location-on"></i> Brisbane</strong></li>
+                          <li>Taxa <strong>$70 / hr</strong></li>
+                          <li>Sucesso <strong>100%</strong></li>
                         </ul>
                       </div>
-                      <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile
+                      <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Ver Perfil
 										<i class="icon-material-outline-arrow-right-alt"></i></a>
                     </div>
                   </div>
@@ -402,12 +402,12 @@ export default function Home() {
                     <div class="freelancer-details">
                       <div class="freelancer-details-list">
                         <ul>
-                          <li>Location <strong><i class="icon-material-outline-location-on"></i> Milan</strong></li>
-                          <li>Rate <strong>$80 / hr</strong></li>
-                          <li>Job Success <strong>89%</strong></li>
+                          <li>Localização <strong><i class="icon-material-outline-location-on"></i> Milan</strong></li>
+                          <li>Taxa <strong>$80 / hr</strong></li>
+                          <li>Sucesso <strong>89%</strong></li>
                         </ul>
                       </div>
-                      <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile
+                      <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Ver Perfil
 										<i class="icon-material-outline-arrow-right-alt"></i></a>
                     </div>
                   </div>
@@ -437,12 +437,12 @@ export default function Home() {
                     <div class="freelancer-details">
                       <div class="freelancer-details-list">
                         <ul>
-                          <li>Location <strong><i class="icon-material-outline-location-on"></i> Paris</strong></li>
-                          <li>Rate <strong>$50 / hr</strong></li>
-                          <li>Job Success <strong>100%</strong></li>
+                          <li>Localização <strong><i class="icon-material-outline-location-on"></i> Paris</strong></li>
+                          <li>Taxa <strong>$50 / hr</strong></li>
+                          <li>Sucesso <strong>100%</strong></li>
                         </ul>
                       </div>
-                      <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">View Profile
+                      <a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Ver Perfil
 										<i class="icon-material-outline-arrow-right-alt"></i></a>
                     </div>
                   </div>
@@ -498,7 +498,7 @@ export default function Home() {
                       </div>
 
 
-                      <span class="list-apply-button ripple-effect">Apply Now</span>
+                      <span class="list-apply-button ripple-effect">Candidatar-se</span>
                     </div>
                   </a>
 
@@ -530,7 +530,7 @@ export default function Home() {
                       </div>
 
 
-                      <span class="list-apply-button ripple-effect">Apply Now</span>
+                      <span class="list-apply-button ripple-effect">Candidatar-se</span>
                     </div>
                   </a>
 
@@ -560,7 +560,7 @@ export default function Home() {
                       </div>
 
 
-                      <span class="list-apply-button ripple-effect">Apply Now</span>
+                      <span class="list-apply-button ripple-effect">Candidatar-se</span>
                     </div>
                   </a>
 
@@ -594,7 +594,7 @@ export default function Home() {
                       </div>
 
 
-                      <span class="list-apply-button ripple-effect">Apply Now</span>
+                      <span class="list-apply-button ripple-effect">Candidatar-se</span>
                     </div>
                   </a>
 
@@ -625,7 +625,7 @@ export default function Home() {
                       </div>
 
 
-                      <span class="list-apply-button ripple-effect">Apply Now</span>
+                      <span class="list-apply-button ripple-effect">Candidatar-se</span>
                     </div>
                   </a>
 
