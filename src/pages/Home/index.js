@@ -1,8 +1,10 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import { useHistory } from 'react-router-dom'
 
 export default function Home() {
+  const history = useHistory()
   return (
     <>
       <Navbar>
@@ -256,7 +258,7 @@ export default function Home() {
 
 
                         <div class="freelancer-name">
-                          <h4><a href="#">David Peterson <img class="flag" src="images/flags/de.svg" alt="" title="Germany"
+                          <h4><a >David Peterson <img class="flag" src="images/flags/de.svg" alt="" title="Germany"
                             data-tippy-placement="top" /></a></h4>
                           <span>iOS Expert + Node Dev</span>
                         </div>
@@ -299,7 +301,7 @@ export default function Home() {
 
 
                         <div class="freelancer-name">
-                          <h4><a href="#">Marcin Kowalski <img class="flag" src="images/flags/pl.svg" alt="" title="Poland"
+                          <h4><a >Marcin Kowalski <img class="flag" src="images/flags/pl.svg" alt="" title="Poland"
                             data-tippy-placement="top" /></a></h4>
                           <span>Front-End Developer</span>
                         </div>
@@ -343,7 +345,7 @@ export default function Home() {
 
 
                         <div class="freelancer-name">
-                          <h4><a href="#">Sindy Forest <img class="flag" src="images/flags/au.svg" alt="" title="Australia"
+                          <h4><a >Sindy Forest <img class="flag" src="images/flags/au.svg" alt="" title="Australia"
                             data-tippy-placement="top" /></a></h4>
                           <span>Magento Certified Developer</span>
                         </div>
@@ -386,7 +388,7 @@ export default function Home() {
 
 
                         <div class="freelancer-name">
-                          <h4><a href="#">Sebastiano Piccio <img class="flag" src="images/flags/it.svg" alt="" title="Italy"
+                          <h4><a >Sebastiano Piccio <img class="flag" src="images/flags/it.svg" alt="" title="Italy"
                             data-tippy-placement="top" /></a></h4>
                           <span>Laravel Dev</span>
                         </div>
@@ -423,7 +425,7 @@ export default function Home() {
                         </div>
 
                         <div class="freelancer-name">
-                          <h4><a href="#">Gabriel Lagueux <img class="flag" src="images/flags/fr.svg" alt="" title="France"
+                          <h4><a >Gabriel Lagueux <img class="flag" src="images/flags/fr.svg" alt="" title="France"
                             data-tippy-placement="top" /></a></h4>
                           <span>WordPress Expert</span>
                         </div>

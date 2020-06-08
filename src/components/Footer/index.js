@@ -2,6 +2,7 @@ import React from 'react'
 import '../../template/css/styles.css'
 
 export default function Footer() {
+  const date = new Date;
   return (
     <>
       <footer>
@@ -61,7 +62,7 @@ export default function Footer() {
             <div class="container">
               <div class="row">
                 <div class="col-xl-12">
-                  © 2020 <strong>Desenvolvido por <a href="https://viniciusportfolio.herokuapp.com/#about">Vinicius Martins</a></strong>. Todos os direitos reservados.
+                  © {date.getFullYear()} <strong>Desenvolvido por <a href="https://viniciusportfolio.herokuapp.com/#about">Vinicius Martins</a></strong>. Todos os direitos reservados.
       </div>
               </div>
             </div>
