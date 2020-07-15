@@ -20,22 +20,22 @@ export default function Navbar(props) {
               <nav id="navigation">
                 <ul id="responsive">
 
-                  <li><a onClick={() => (history.push('/'))} class="current">Home</a>
+                  <li><a href="/" class="current">Home</a>
                   </li>
 
                   <li><a >Encontrar Trabalho</a>
                     <ul class="dropdown-nav">
-                      <li><a onClick={() => (history.push('/findjob'))}>Procurar Empregos</a>
+                      <li><a href="/findjob">Procurar Empregos</a>
                       </li>
-                      <li><a onClick={() => (history.push('/findcompani'))}>Procurar Empresas</a></li>
+                      <li><a href="/findcompani">Procurar Empresas</a></li>
                     </ul>
                   </li>
 
                   <li><a >Para Empregadores</a>
                     <ul class="dropdown-nav">
-                      <li><a onClick={() => (history.push('/findfreelancer'))} >Procurar um Freelancer</a>
+                      <li><a href="/findfreelancer">Procurar um Freelancer</a>
                       </li>
-                      <li><a href="dashboard-post-a-job.html">Postar Vaga</a></li>
+                      <li><a href="/homedashboard">Postar Vaga</a></li>
                     </ul>
                   </li>
 
