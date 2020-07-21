@@ -32,25 +32,18 @@ export default function Dashboard(props) {
                   </ul>
 
                   <ul data-submenu-title="Empregador">
-                    <li><a href="#"><i class="icon-material-outline-business-center"></i> Vagas</a>
-                      <ul>
-                        <li><a href="/managerjob">Gerenciar vagas<span class="nav-tag">3</span></a></li>
-                        <li><a href="/managercandidates">Gerenciar candidatos</a></li>
-                        <li><a href="/postjob">Posta uma vaga</a></li>
-                      </ul>
-                    </li>
+                    <li><a href="/managerjob"><i class="icon-material-outline-business-center"></i>Gerenciar vagas</a></li>
+                    <li><a href="/managercandidates"><i class="icon-material-outline-supervisor-account"></i>Gerenciar candidatos</a></li>
+                    <li><a href="/postjob"><i class="icon-feather-edit"></i>Postar uma vaga</a></li>
                   </ul>
                   <ul data-submenu-title="Freelancer">
-                    <li><a href="#"><i class="icon-material-outline-assignment"></i>Candidatura</a>
-                      <ul>
-                        <li><a href="dashboard-manage-tasks.html">Gerenciar candidaturas<span class="nav-tag">2</span></a></li>
-                      </ul>
+                    <li><a href="/myapplications"><i class="icon-material-outline-assignment"></i>Candidaturas</a>
                     </li>
                   </ul>
 
                   <ul data-submenu-title="Minha Conta">
-                    <li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i> Ajustes</a></li>
-                    <li><a href="index-logged-out.html"><i class="icon-material-outline-power-settings-new"></i> Sair</a></li>
+                    <li><a href="/settings"><i class="icon-material-outline-settings"></i> Ajustes</a></li>
+                    <li><a href="/#"><i class="icon-material-outline-power-settings-new"></i> Sair</a></li>
                   </ul>
 
                 </div>

@@ -20,3 +20,6 @@ body {
 .bgcolor{
   background: #2a41e8;
 }
+.messageErrorColor{
+  color: red;
+}

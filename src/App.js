@@ -13,6 +13,8 @@ import Reviews from './pages/Reviews'
 import ManagerJob from './pages/ManagerJob'
 import ManagerCandidates from './pages/ManagerCandidates'
 import PostJob from './pages/PostJob'
+import MyApplications from './pages/MyApplications'
+import Settings from './pages/Settings'
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
       <Route exact path='/managerjob' component={ManagerJob} />
       <Route exact path='/managercandidates' component={ManagerCandidates} />
       <Route exact path='/postjob' component={PostJob} />
+      <Route exact path='/myapplications' component={MyApplications} />
+      <Route exact path='/settings' component={Settings} />
     </BrowserRouter>
   );
 }
