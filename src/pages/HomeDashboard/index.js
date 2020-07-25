@@ -86,7 +86,7 @@ export default function HomeDashboard() {
                   <div class="note-footer">
                     <span class="note-priority high">Prioridade Alta</span>
                     <div class="note-buttons">
-                      <a href="#" title="Remove" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
+                      <a href="!#" title="Remove" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
                     </div>
                   </div>
                 </div>

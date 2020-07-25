@@ -84,7 +84,7 @@ export default function Home() {
                     </div>
 
                     <div class="freelancer-name">
-                      <h4><a href="#">David Peterson <img class="flag" src="images/flags/de.svg" alt="" title="Germany" data-tippy-placement="top" /></a></h4>
+                      <h4><a href="!#">David Peterson <img class="flag" src="images/flags/de.svg" alt="" title="Germany" data-tippy-placement="top" /></a></h4>
                       <span>iOS Expert + Node Dev</span>
                     </div>
 
@@ -111,12 +111,12 @@ export default function Home() {
             <div class="pagination-container margin-top-20 margin-bottom-20">
               <nav class="pagination">
                 <ul>
-                  <li class="pagination-arrow"><a href="#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-left"></i></a></li>
-                  <li><a href="#" class="ripple-effect">1</a></li>
-                  <li><a href="#" class="ripple-effect current-page">2</a></li>
-                  <li><a href="#" class="ripple-effect">3</a></li>
-                  <li><a href="#" class="ripple-effect">4</a></li>
-                  <li class="pagination-arrow"><a href="#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-right"></i></a></li>
+                  <li class="pagination-arrow"><a href="!#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-left"></i></a></li>
+                  <li><a href="!#" class="ripple-effect">1</a></li>
+                  <li><a href="!#" class="ripple-effect current-page">2</a></li>
+                  <li><a href="!#" class="ripple-effect">3</a></li>
+                  <li><a href="!#" class="ripple-effect">4</a></li>
+                  <li class="pagination-arrow"><a href="!#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-right"></i></a></li>
                 </ul>
               </nav>
             </div>
@@ -127,22 +127,22 @@ export default function Home() {
 				</div>
               <ul class="footer-social-links">
                 <li>
-                  <a href="#" title="Facebook" data-tippy-placement="top">
+                  <a href="!#" title="Facebook" data-tippy-placement="top">
                     <i class="icon-brand-facebook-f"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#" title="Twitter" data-tippy-placement="top">
+                  <a href="!#" title="Twitter" data-tippy-placement="top">
                     <i class="icon-brand-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#" title="Google Plus" data-tippy-placement="top">
+                  <a href="!#" title="Google Plus" data-tippy-placement="top">
                     <i class="icon-brand-google-plus-g"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#" title="LinkedIn" data-tippy-placement="top">
+                  <a href="!#" title="LinkedIn" data-tippy-placement="top">
                     <i class="icon-brand-linkedin-in"></i>
                   </a>
                 </li>

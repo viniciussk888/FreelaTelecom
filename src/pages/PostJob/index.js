@@ -122,7 +122,7 @@ export default function PostJob() {
           </div>
 
           <div class="col-xl-12">
-            <a href="#" class="button ripple-effect big margin-top-30"><i class="icon-feather-plus"></i> Postar vaga</a>
+            <a href="!#" class="button ripple-effect big margin-top-30"><i class="icon-feather-plus"></i> Postar vaga</a>
           </div>
 
         </div>

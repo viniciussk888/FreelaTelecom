@@ -24,7 +24,7 @@ export default function ManagerJob() {
                       <div class="job-listing-details">
 
                         <div class="job-listing-description">
-                          <h3 class="job-listing-title"><a href="#">Frontend React Developer</a> <span class="dashboard-status-button green">Pending Approval</span></h3>
+                          <h3 class="job-listing-title"><a href="!#">Frontend React Developer</a> <span class="dashboard-status-button green">Pending Approval</span></h3>
 
                           <div class="job-listing-footer">
                             <ul>
@@ -38,8 +38,8 @@ export default function ManagerJob() {
 
                     <div class="buttons-to-right always-visible">
                       <a href="dashboard-manage-candidates.html" class="button ripple-effect"><i class="icon-material-outline-supervisor-account"></i> Manage Candidates <span class="button-info">0</span></a>
-                      <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
-                      <a href="#" class="button gray ripple-effect ico" title="Remove" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
+                      <a href="!#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
+                      <a href="!#" class="button gray ripple-effect ico" title="Remove" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
                     </div>
                   </li>
 
@@ -49,7 +49,7 @@ export default function ManagerJob() {
                       <div class="job-listing-details">
 
                         <div class="job-listing-description">
-                          <h3 class="job-listing-title"><a href="#">Full Stack PHP Developer</a> <span class="dashboard-status-button yellow">Expiring</span></h3>
+                          <h3 class="job-listing-title"><a href="!#">Full Stack PHP Developer</a> <span class="dashboard-status-button yellow">Expiring</span></h3>
 
                           <div class="job-listing-footer">
                             <ul>
@@ -64,8 +64,8 @@ export default function ManagerJob() {
 
                     <div class="buttons-to-right always-visible">
                       <a href="dashboard-manage-candidates.html" class="button ripple-effect"><i class="icon-material-outline-supervisor-account"></i> Manage Candidates <span class="button-info">3</span></a>
-                      <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
-                      <a href="#" class="button gray ripple-effect ico" title="Remove" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
+                      <a href="!#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
+                      <a href="!#" class="button gray ripple-effect ico" title="Remove" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
                     </div>
                   </li>
 
@@ -75,7 +75,7 @@ export default function ManagerJob() {
                       <div class="job-listing-details">
 
                         <div class="job-listing-description">
-                          <h3 class="job-listing-title"><a href="#">Node.js Developer</a> <span class="dashboard-status-button red">Expired</span></h3>
+                          <h3 class="job-listing-title"><a href="!#">Node.js Developer</a> <span class="dashboard-status-button red">Expired</span></h3>
 
                           <div class="job-listing-footer">
                             <ul>
@@ -88,9 +88,9 @@ export default function ManagerJob() {
 
                     <div class="buttons-to-right always-visible">
                       <a href="dashboard-manage-candidates.html" class="button ripple-effect"><i class="icon-material-outline-supervisor-account"></i> Manage Candidates <span class="button-info">7</span></a>
-                      <a href="#" class="button dark ripple-effect"><i class="icon-feather-rotate-ccw"></i> Refresh</a>
-                      <a href="#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
-                      <a href="#" class="button gray ripple-effect ico" title="Remove" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
+                      <a href="!#" class="button dark ripple-effect"><i class="icon-feather-rotate-ccw"></i> Refresh</a>
+                      <a href="!#" class="button gray ripple-effect ico" title="Edit" data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
+                      <a href="!#" class="button gray ripple-effect ico" title="Remove" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
                     </div>
                   </li>
 

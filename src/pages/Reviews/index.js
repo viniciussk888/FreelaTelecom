@@ -55,10 +55,10 @@ export default function Reviews() {
             <div class="pagination-container margin-top-40 margin-bottom-0">
               <nav class="pagination">
                 <ul>
-                  <li><a href="#" class="ripple-effect current-page">1</a></li>
-                  <li><a href="#" class="ripple-effect">2</a></li>
-                  <li><a href="#" class="ripple-effect">3</a></li>
-                  <li class="pagination-arrow"><a href="#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-right"></i></a></li>
+                  <li><a href="!#" class="ripple-effect current-page">1</a></li>
+                  <li><a href="!#" class="ripple-effect">2</a></li>
+                  <li><a href="!#" class="ripple-effect">3</a></li>
+                  <li class="pagination-arrow"><a href="!#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-right"></i></a></li>
                 </ul>
               </nav>
             </div>

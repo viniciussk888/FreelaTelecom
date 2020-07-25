@@ -24,7 +24,7 @@ export default function MyApplications() {
                       <div class="job-listing-details">
 
                         <div class="job-listing-description">
-                          <h3 class="job-listing-title"><a href="#">Design a Landing Page</a> <span class="dashboard-status-button yellow">Expiring</span></h3>
+                          <h3 class="job-listing-title"><a href="!#">Design a Landing Page</a> <span class="dashboard-status-button yellow">Expiring</span></h3>
 
                           <div class="job-listing-footer">
                             <ul>
@@ -42,7 +42,7 @@ export default function MyApplications() {
   </ul>*/}
 
                     <div class="buttons-to-right always-visible">
-                      <a href="#" class="button gray ripple-effect ico" title="Remove" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
+                      <a href="!#" class="button gray ripple-effect ico" title="Remove" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
                     </div>
                   </li>
 

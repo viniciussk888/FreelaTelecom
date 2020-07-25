@@ -16,22 +16,32 @@ import PostJob from './pages/PostJob'
 import MyApplications from './pages/MyApplications'
 import Settings from './pages/Settings'
 
+import { store, persistor } from './store/';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+
 function App() {
   return (
-    <BrowserRouter>
-      <Route exact path='/' component={Home} />
-      <Route exact path='/findjob' component={FindJob} />
-      <Route exact path='/findcompani' component={FindCompani} />
-      <Route exact path='/findfreelancer' component={FindFreelancer} />
-      <Route exact path='/homedashboard' component={HomeDashboard} />
-      <Route exact path='/bookmarks' component={Bookmarks} />
-      <Route exact path='/reviews' component={Reviews} />
-      <Route exact path='/managerjob' component={ManagerJob} />
-      <Route exact path='/managercandidates' component={ManagerCandidates} />
-      <Route exact path='/postjob' component={PostJob} />
-      <Route exact path='/myapplications' component={MyApplications} />
-      <Route exact path='/settings' component={Settings} />
-    </BrowserRouter>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+
+        <BrowserRouter>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/findjob' component={FindJob} />
+          <Route exact path='/findcompani' component={FindCompani} />
+          <Route exact path='/findfreelancer' component={FindFreelancer} />
+          <Route exact path='/homedashboard' component={HomeDashboard} />
+          <Route exact path='/bookmarks' component={Bookmarks} />
+          <Route exact path='/reviews' component={Reviews} />
+          <Route exact path='/managerjob' component={ManagerJob} />
+          <Route exact path='/managercandidates' component={ManagerCandidates} />
+          <Route exact path='/postjob' component={PostJob} />
+          <Route exact path='/myapplications' component={MyApplications} />
+          <Route exact path='/settings' component={Settings} />
+        </BrowserRouter>
+
+      </PersistGate>
+    </Provider>
   );
 }
 

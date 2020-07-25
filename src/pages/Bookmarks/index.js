@@ -23,12 +23,12 @@ export default function Bookmarks() {
 
                       <div class="job-listing-details">
 
-                        <a href="#" class="job-listing-company-logo">
+                        <a href="" class="job-listing-company-logo">
                           <img src="images/company-logo-02.png" alt="" />
                         </a>
 
                         <div class="job-listing-description">
-                          <h3 class="job-listing-title"><a href="#">Barista and Cashier</a></h3>
+                          <h3 class="job-listing-title"><a href="">Barista and Cashier</a></h3>
 
                           <div class="job-listing-footer">
                             <ul>
@@ -42,7 +42,7 @@ export default function Bookmarks() {
                       </div>
                     </div>
                     <div class="buttons-to-right">
-                      <a href="#" class="button red ripple-effect ico" title="Remove" data-tippy-placement="left"><i class="icon-feather-trash-2"></i></a>
+                      <a href="" class="button red ripple-effect ico" title="Remove" data-tippy-placement="left"><i class="icon-feather-trash-2"></i></a>
                     </div>
                   </li>
 
@@ -51,13 +51,13 @@ export default function Bookmarks() {
 
                       <div class="job-listing-details">
 
-                        <a href="#" class="job-listing-company-logo">
+                        <a href="" class="job-listing-company-logo">
                           <img src="images/company-logo-04.png" alt="" />
                         </a>
 
 
                         <div class="job-listing-description">
-                          <h3 class="job-listing-title"><a href="#">Administrative Assistant</a></h3>
+                          <h3 class="job-listing-title"><a href="">Administrative Assistant</a></h3>
 
                           <div class="job-listing-footer">
                             <ul>
@@ -73,7 +73,7 @@ export default function Bookmarks() {
                     </div>
 
                     <div class="buttons-to-right">
-                      <a href="#" class="button red ripple-effect ico" title="Remove" data-tippy-placement="left"><i class="icon-feather-trash-2"></i></a>
+                      <a href="" class="button red ripple-effect ico" title="Remove" data-tippy-placement="left"><i class="icon-feather-trash-2"></i></a>
                     </div>
                   </li>
 
@@ -82,12 +82,12 @@ export default function Bookmarks() {
 
                       <div class="job-listing-details">
 
-                        <a href="#" class="job-listing-company-logo">
+                        <a href="" class="job-listing-company-logo">
                           <img src="images/company-logo-05.png" alt="" />
                         </a>
 
                         <div class="job-listing-description">
-                          <h3 class="job-listing-title"><a href="#">Construction Labourers</a></h3>
+                          <h3 class="job-listing-title"><a href="">Construction Labourers</a></h3>
 
                           <div class="job-listing-footer">
                             <ul>
@@ -102,7 +102,7 @@ export default function Bookmarks() {
                     </div>
 
                     <div class="buttons-to-right">
-                      <a href="#" class="button red ripple-effect ico" title="Remove" data-tippy-placement="left"><i class="icon-feather-trash-2"></i></a>
+                      <a href="" class="button red ripple-effect ico" title="Remove" data-tippy-placement="left"><i class="icon-feather-trash-2"></i></a>
                     </div>
                   </li>
 
@@ -126,11 +126,11 @@ export default function Bookmarks() {
 
                         <div class="freelancer-avatar">
                           <div class="verified-badge"></div>
-                          <a href="#"><img src="images/user-avatar-big-02.jpg" alt="" /></a>
+                          <a href=""><img src="images/user-avatar-big-02.jpg" alt="" /></a>
                         </div>
 
                         <div class="freelancer-name">
-                          <h4><a href="#">David Peterson <img class="flag" src="images/flags/de.svg" alt="" title="Germany" data-tippy-placement="top" /></a></h4>
+                          <h4><a href="">David Peterson <img class="flag" src="images/flags/de.svg" alt="" title="Germany" data-tippy-placement="top" /></a></h4>
                           <span>iOS Expert + Node Dev</span>
                           <div class="freelancer-rating">
                             <div class="star-rating" data-rating="4.2"></div>
@@ -140,7 +140,7 @@ export default function Bookmarks() {
                     </div>
 
                     <div class="buttons-to-right">
-                      <a href="#" class="button red ripple-effect ico" title="Remove" data-tippy-placement="left"><i class="icon-feather-trash-2"></i></a>
+                      <a href="" class="button red ripple-effect ico" title="Remove" data-tippy-placement="left"><i class="icon-feather-trash-2"></i></a>
                     </div>
                   </li>
                   <li>
@@ -148,11 +148,11 @@ export default function Bookmarks() {
                       <div class="freelancer-overview-inner">
 
                         <div class="freelancer-avatar">
-                          <a href="#"><img src="images/user-avatar-placeholder.png" alt="" /></a>
+                          <a href=""><img src="images/user-avatar-placeholder.png" alt="" /></a>
                         </div>
 
                         <div class="freelancer-name">
-                          <h4><a href="#">Marcin Kowalski <img class="flag" src="images/flags/pl.svg" alt="" title="Poland" data-tippy-placement="top" /></a></h4>
+                          <h4><a href="">Marcin Kowalski <img class="flag" src="images/flags/pl.svg" alt="" title="Poland" data-tippy-placement="top" /></a></h4>
                           <span>Front-End Developer</span>
                           <div class="freelancer-rating">
                             <div class="star-rating" data-rating="4.7"></div>
@@ -162,7 +162,7 @@ export default function Bookmarks() {
                     </div>
 
                     <div class="buttons-to-right">
-                      <a href="#" class="button red ripple-effect ico" title="Remove" data-tippy-placement="left"><i class="icon-feather-trash-2"></i></a>
+                      <a href="" class="button red ripple-effect ico" title="Remove" data-tippy-placement="left"><i class="icon-feather-trash-2"></i></a>
                     </div>
                   </li>
                 </ul>

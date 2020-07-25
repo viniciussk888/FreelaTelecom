@@ -13,7 +13,7 @@ export default function Dashboard(props) {
           <div class="dashboard-sidebar-inner" data-simplebar>
             <div class="dashboard-nav-container">
 
-              <a href="#" class="dashboard-responsive-nav-trigger">
+              <a href="!#" class="dashboard-responsive-nav-trigger">
                 <span class="hamburger hamburger--collapse" >
                   <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
@@ -60,22 +60,22 @@ export default function Dashboard(props) {
           <div class="small-footer margin-top-15">
             <ul class="footer-social-links">
               <li>
-                <a href="#" title="Facebook" data-tippy-placement="top">
+                <a href="!#" title="Facebook" data-tippy-placement="top">
                   <i class="icon-brand-facebook-f"></i>
                 </a>
               </li>
               <li>
-                <a href="#" title="Twitter" data-tippy-placement="top">
+                <a href="!#" title="Twitter" data-tippy-placement="top">
                   <i class="icon-brand-twitter"></i>
                 </a>
               </li>
               <li>
-                <a href="#" title="Google Plus" data-tippy-placement="top">
+                <a href="!#" title="Google Plus" data-tippy-placement="top">
                   <i class="icon-brand-google-plus-g"></i>
                 </a>
               </li>
               <li>
-                <a href="#" title="LinkedIn" data-tippy-placement="top">
+                <a href="!#" title="LinkedIn" data-tippy-placement="top">
                   <i class="icon-brand-linkedin-in"></i>
                 </a>
               </li>

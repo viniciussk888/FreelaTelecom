@@ -23,13 +23,13 @@ export default function ManagerCandidates() {
 
                         <div class="freelancer-avatar">
                           <div class="verified-badge"></div>
-                          <a href="#"><img src="images/user-avatar-big-03.jpg" alt="" /></a>
+                          <a href="!#"><img src="images/user-avatar-big-03.jpg" alt="" /></a>
                         </div>
 
                         <div class="freelancer-name">
-                          <h4><a href="#">Sindy Forest <img class="flag" src="images/flags/au.svg" alt="" title="Australia" data-tippy-placement="top" /></a></h4>
+                          <h4><a href="!#">Sindy Forest <img class="flag" src="images/flags/au.svg" alt="" title="Australia" data-tippy-placement="top" /></a></h4>
 
-                          <span class="freelancer-detail-item"><a href="#"><i class="icon-feather-mail"></i> sindy@example.com</a></span>
+                          <span class="freelancer-detail-item"><a href="!#"><i class="icon-feather-mail"></i> sindy@example.com</a></span>
                           <span class="freelancer-detail-item"><i class="icon-feather-phone"></i> (+61) 123-456-789</span>
 
                           <div class="freelancer-rating">
@@ -37,9 +37,9 @@ export default function ManagerCandidates() {
                           </div>
 
                           <div class="buttons-to-right always-visible margin-top-25 margin-bottom-5">
-                            <a href="#" class="button ripple-effect"><i class="icon-feather-file-text"></i> Download CV</a>
+                            <a href="!#" class="button ripple-effect"><i class="icon-feather-file-text"></i> Download CV</a>
                             <a href="#small-dialog" class="popup-with-zoom-anim button dark ripple-effect"><i class="icon-feather-mail"></i> Send Message</a>
-                            <a href="#" class="button gray ripple-effect ico" title="Remove Candidate" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
+                            <a href="!#" class="button gray ripple-effect ico" title="Remove Candidate" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
                           </div>
                         </div>
                       </div>

@@ -3,8 +3,15 @@ import '../../template/css/styles.css'
 
 import firebase from '../../config/firebase'
 import apiCep from '../../services/apiCep'
+import api from '../../services/api'
+
+import { useSelector, useDispatch } from 'react-redux';
+
+const auth = firebase.auth();
 
 export default function Navbar(props) {
+  const dispatch = useDispatch();
+
   const [erroMessage, setErroMessage] = useState("")
   const [load, setLoad] = useState(0)
 
@@ -20,10 +27,36 @@ export default function Navbar(props) {
   const [cep, setCep] = useState('')
   const [uf, setUf] = useState('')
   const [city, setCity] = useState('')
-  const [name, setName] = useState('')
+  const [name, setName] = useState(useSelector(state => state.userName))
   const [profession, setProfession] = useState('')
-  const [type, setType] = useState('freelancer')
+  const [type, setType] = useState(useSelector(state => state.userType) || 'Freelancer')
+  const [profileUrl, setProfileUrl] = useState(useSelector(state => state.userProfileUrl) || 'images/user-avatar-small-01.jpg')
 
+  async function login(e) {
+    e.preventDefault();
+    firebase.auth().signInWithEmailAndPassword(emailLogin, passwordLogin).then(async () => {
+      const response = await api.post('session', {
+        uid: auth.currentUser.uid
+      })
+      if (response.data) {
+        dispatch({
+          type: 'LOG_IN',
+          userId: response.data.id,
+          userName: auth.currentUser.displayName,
+          userEmail: emailLogin,
+          userType: response.data.type,
+          userProfileUrl: auth.currentUser.photoURL,
+          uid: auth.currentUser.uid
+        });
+        setErroMessage('Sucesso!');
+        window.location.reload()
+      }
+
+    }).catch(erro => {
+      console.log(erro.message)
+      setErroMessage(erro.message || "Erro não identificado!");
+    });
+  }
   async function register(e) {
     e.preventDefault();
     if (password !== password2) {
@@ -32,9 +65,6 @@ export default function Navbar(props) {
     firebase.auth().createUserWithEmailAndPassword(email, password).then(resultado => {
       setErroMessage('Sucesso!')
       setUid(firebase.auth().currentUser.uid)
-      //  setTimeout(() => {
-      //   window.location.href = "/settings"
-      // }, 1000);
     }).catch(erro => {
       switch (erro.message) {
         case 'Password should be at least 6 characters':
@@ -52,40 +82,45 @@ export default function Navbar(props) {
       }
     })
   }
-
-  async function login(e) {
-    e.preventDefault();
-    firebase.auth().signInWithEmailAndPassword(emailLogin, passwordLogin).then(resultado => {
-      setErroMessage('Sucesso!');
-      // setTimeout(() => {
-      //   dispatch({ type: 'LOG_IN', usuarioEmail: email });
-      // }, 1000);
-      localStorage.setItem('logado', true)
-      window.location.reload()
-    }).catch(erro => {
-      console.log(erro.message)
-      setErroMessage(erro.message || "Erro não identificado!");
-    });
-  }
   async function completeRegister() {
     setLoad(1)
-    firebase.firestore().collection('users').doc(uid).set({
-      type: type,
-      name: name,
-      email: email,
-      uid: uid,
-      cep: cep,
-      city: city,
-      uf: uf,
-      profession: profession
-    }).then(function () {
-      alert("cadastro concluido!")
-      setLoad(0)
-      localStorage.setItem('logado', true)
-      window.location.href = '/homedashboard'
-    });
-  }
+    try {
+      const response = await api.post('users', {
+        type: type,
+        name: name,
+        email: email,
+        uid: uid,
+        cep: cep,
+        city: city,
+        photoURL: "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_960_720.png",
+        uf: uf,
+        profession: profession
+      })
+      if (response.data) {
 
+        var user = firebase.auth().currentUser;
+        user.updateProfile({
+          displayName: name,
+          email: email,
+          photoURL: "https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_960_720.png"
+        })
+
+        setLoad(0)
+        dispatch({
+          type: 'LOG_IN',
+          userId: response.data.id,
+          userName: name,
+          userEmail: email,
+          userType: type,
+          userProfileUrl: 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_960_720.png',
+          uid: uid
+        });
+        window.location.href = '/settings'
+      }
+    } catch (error) {
+      alert(error)
+    }
+  }
   async function handleCity() {
     const response = await apiCep.get(`${cep}/json`)
     console.log(response)
@@ -94,7 +129,9 @@ export default function Navbar(props) {
   }
   async function logout() {
     firebase.auth().signOut().then(function () {
-      localStorage.setItem('logado', false)
+      dispatch({
+        type: 'LOG_OUT'
+      });
       window.location.reload()
     }).catch(function (error) {
       // An error happened.
@@ -115,7 +152,7 @@ export default function Navbar(props) {
             <div class="left-side">
 
               <div id="logo">
-                <a href="index.html"><img src="images/logo.png" alt="" /></a>
+                <a href="/"><img src="images/logo.png" alt="" /></a>
               </div>
 
               <nav id="navigation">
@@ -154,13 +191,13 @@ export default function Navbar(props) {
             <div class="right-side">
 
               <div class="header-widget">
-                {localStorage.getItem('logado') == "false" ?
+                {useSelector(state => state.usuarioLogado) === 0 ?
                   <a href="#sign-in-dialog" class="popup-with-zoom-anim log-in-button"><i class="icon-feather-log-in"></i> <span>Log In / Registo</span></a>
                   :
                   <div class="header-notifications user-menu">
                     <div class="header-notifications-trigger">
                       <a >
-                        <div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt="" /></div>
+                        <div class="user-avatar status-online"><img src={profileUrl} alt="avatar" /></div>
                       </a>
                     </div>
 
@@ -169,9 +206,9 @@ export default function Navbar(props) {
                       <div class="user-status">
 
                         <div class="user-details">
-                          <div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt="" /></div>
+                          <div class="user-avatar status-online"><img src={profileUrl} alt="" /></div>
                           <div class="user-name">
-                            Tom Smith <span>Freelancer</span>
+                            {name || "Carregando..."} <span></span>
                           </div>
                         </div>
                       </div>
@@ -255,12 +292,12 @@ export default function Navbar(props) {
 
                   <div class="account-type">
                     <div>
-                      <input onClick={(e) => setType('freelancer')} type="radio" name="account-type-radio" id="freelancer-radio" class="account-type-radio" checked />
+                      <input onClick={(e) => setType('Freelancer')} type="radio" name="account-type-radio" id="freelancer-radio" class="account-type-radio" checked />
                       <label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Freelancer</label>
                     </div>
 
                     <div>
-                      <input onClick={(e) => setType('employer')} type="radio" name="account-type-radio" id="employer-radio" class="account-type-radio" />
+                      <input onClick={(e) => setType('Empresa')} type="radio" name="account-type-radio" id="employer-radio" class="account-type-radio" />
                       <label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i>Empresa</label>
                     </div>
                   </div>
